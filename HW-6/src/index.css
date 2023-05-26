@@ -6,6 +6,8 @@ body {
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
+
+	justify-content: center;
 }
 
 a {
@@ -87,7 +89,9 @@ li {
 }
 
 .nav {
+	margin-top: 50px;
 	display: flex;
+	justify-content: center;
 }
 
 .nav li {
