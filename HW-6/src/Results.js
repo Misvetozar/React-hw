@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import PlayerPreview from './PlayerPreview.js'
-import './Results.css'
 import { battle } from './api'
 
 const Results = () => {

@@ -9,6 +9,14 @@ const Popular = () => {
 	const [searchParams] = useSearchParams()
 	const activeTabFromSearchParams = searchParams.get('tab')
 
+	function Loader() {
+		return (
+			<div className='loader-container'>
+				<div className='loader' />
+			</div>
+		)
+	}
+
 	useEffect(() => {
 		setShowLoader(true)
 		fetchPopularRepos(selectedLanguage)
@@ -95,14 +103,6 @@ function Tab(props) {
 				</li>
 			))}
 		</ul>
-	)
-}
-
-function Loader() {
-	return (
-		<div className='loader-container'>
-			<div className='loader' />
-		</div>
 	)
 }
 
